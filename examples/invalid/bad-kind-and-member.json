@@ -1,0 +1,32 @@
+{
+  "collection": {
+    "id": "demo-selfbuild-2027",
+    "name": "Demo Self Build Show 2027",
+    "kind": "festival",
+    "publisher": {
+      "name": "Demo Shows",
+      "domain": "shows.example"
+    },
+    "validFrom": "2027-05-14",
+    "validTo": "2027-05-16",
+    "facets": [
+      "category",
+      "priceFrom",
+      "stand"
+    ],
+    "members": [
+      {
+        "catalog": "https://windows.example/.well-known/ai-catalog.json",
+        "role": {
+          "stand": "B12",
+          "category": "glazing"
+        }
+      },
+      {
+        "role": {
+          "stand": "B20"
+        }
+      }
+    ]
+  }
+}

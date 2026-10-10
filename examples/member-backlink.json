@@ -1,0 +1,10 @@
+{
+  "memberOf": [
+    {
+      "collection": "https://shows.example/.well-known/collections/demo-selfbuild-2027.json",
+      "role": {
+        "stand": "B12"
+      }
+    }
+  ]
+}

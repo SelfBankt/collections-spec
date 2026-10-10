@@ -1,0 +1,28 @@
+{
+  "collection": {
+    "id": "demo-builders-association",
+    "name": "Demo Builders Association",
+    "kind": "association",
+    "publisher": {
+      "name": "Demo Builders Association",
+      "domain": "builders.example"
+    },
+    "facets": [
+      "category"
+    ],
+    "members": [
+      {
+        "collection": "https://shows.example/.well-known/collections/demo-selfbuild-2027.json",
+        "role": {
+          "type": "event"
+        }
+      },
+      {
+        "catalog": "https://windows.example/.well-known/ai-catalog.json",
+        "role": {
+          "category": "glazing"
+        }
+      }
+    ]
+  }
+}

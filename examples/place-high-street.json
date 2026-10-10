@@ -1,0 +1,34 @@
+{
+  "collection": {
+    "id": "demo-high-street",
+    "name": "Demo High Street",
+    "kind": "place",
+    "publisher": {
+      "name": "Demo Town Traders",
+      "domain": "traders.example"
+    },
+    "area": {
+      "postcodeAreas": [
+        "ZZ1"
+      ]
+    },
+    "facets": [
+      "category",
+      "openNow"
+    ],
+    "members": [
+      {
+        "catalog": "https://bakery.example/.well-known/ai-catalog.json",
+        "role": {
+          "category": "bakery"
+        }
+      },
+      {
+        "catalog": "https://hardware.example/.well-known/ai-catalog.json",
+        "role": {
+          "category": "hardware"
+        }
+      }
+    ]
+  }
+}

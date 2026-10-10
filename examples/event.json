@@ -1,0 +1,90 @@
+{
+  "collection": {
+    "id": "demo-selfbuild-2027",
+    "name": "Demo Self Build Show 2027",
+    "kind": "event",
+    "publisher": {
+      "name": "Demo Shows",
+      "domain": "shows.example"
+    },
+    "validFrom": "2027-05-14",
+    "validTo": "2027-05-16",
+    "facets": [
+      "category",
+      "priceFrom",
+      "stand"
+    ],
+    "members": [
+      {
+        "catalog": "https://windows.example/.well-known/ai-catalog.json",
+        "role": {
+          "stand": "B12",
+          "category": "glazing"
+        }
+      },
+      {
+        "catalog": "https://sash.example/.well-known/ai-catalog.json",
+        "role": {
+          "stand": "B20",
+          "category": "glazing"
+        }
+      },
+      {
+        "catalog": "https://glazing.example/.well-known/ai-catalog.json",
+        "role": {
+          "stand": "B14",
+          "category": "glazing"
+        }
+      },
+      {
+        "catalog": "https://heatpumps.example/.well-known/ai-catalog.json",
+        "role": {
+          "stand": "C04",
+          "category": "heating"
+        }
+      },
+      {
+        "catalog": "https://underfloor.example/.well-known/ai-catalog.json",
+        "role": {
+          "stand": "C09",
+          "category": "heating"
+        }
+      },
+      {
+        "catalog": "https://timberframe.example/.well-known/ai-catalog.json",
+        "role": {
+          "stand": "A03",
+          "category": "structure"
+        }
+      },
+      {
+        "catalog": "https://insulation.example/.well-known/ai-catalog.json",
+        "role": {
+          "stand": "A07",
+          "category": "insulation"
+        }
+      },
+      {
+        "catalog": "https://solar.example/.well-known/ai-catalog.json",
+        "role": {
+          "stand": "D02",
+          "category": "energy"
+        }
+      },
+      {
+        "catalog": "https://roofing.example/.well-known/ai-catalog.json",
+        "role": {
+          "stand": "B03",
+          "category": "roofing"
+        }
+      },
+      {
+        "catalog": "https://rainwater.example/.well-known/ai-catalog.json",
+        "role": {
+          "stand": "D05",
+          "category": "water"
+        }
+      }
+    ]
+  }
+}
