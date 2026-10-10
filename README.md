@@ -11,7 +11,7 @@ Every agent standard today describes one business at one domain. A collection le
 - [Specification: Collections 0.1](spec/collections-0.1.md)
 - [JSON Schema](schema/collections-0.1.schema.json)
 - [Examples](examples/): an event, a high street, a nested association and a member back-link
-- Interactive explorer and validator: gentifi.com/standards (once the site is live)
+- [Interactive explorer and validator](https://gentifi.com/standards#explorer) on gentifi.com
 
 ## The five rules in brief
 
@@ -28,7 +28,7 @@ npx -y -p ajv-cli@5 -p ajv-formats@3 ajv validate --spec=draft2020 -c ajv-format
   -s schema/collections-0.1.schema.json -d your-collection.json
 ```
 
-The schema checks structure. Rule 2 (no customer data) and rule 1 (membership confirmed by each member) also need a client, or the online validator at gentifi.com/standards once the site is live.
+The schema checks structure. Rule 2 (no customer data) and rule 1 (membership confirmed by each member) also need a client, or the [online validator](https://gentifi.com/standards#validate).
 
 ## Get involved
 
