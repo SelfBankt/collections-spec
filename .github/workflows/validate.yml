@@ -1,0 +1,30 @@
+name: Validate examples
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Valid examples pass the schema
+        run: |
+          for f in examples/*.json; do
+            [ "$f" = "examples/member-backlink.json" ] && continue
+            npx -y -p ajv-cli@5 -p ajv-formats@3 ajv validate --spec=draft2020 -c ajv-formats \
+              -s schema/collections-0.1.schema.json -d "$f"
+          done
+      - name: Invalid examples fail the schema
+        run: |
+          for f in examples/invalid/*.json; do
+            if npx -y -p ajv-cli@5 -p ajv-formats@3 ajv validate --spec=draft2020 -c ajv-formats \
+                 -s schema/collections-0.1.schema.json -d "$f"; then
+              echo "::error file=$f::expected this example to fail the schema"
+              exit 1
+            fi
+          done

@@ -13,6 +13,6 @@ Collections is an early draft, and feedback is the most useful contribution.
 - **Use fictional data** in examples, on reserved `.example` domains.
 - **Write in UK English.**
 
-Every example under `examples/` (except `examples/invalid/`) must pass the schema. Run the validation command in the README before opening a pull request.
+Every example under `examples/` (except `examples/invalid/`) must pass the schema, and every file in `examples/invalid/` must fail it. CI checks both on each push; you can run the same check with the command in the README.
 
 By contributing, you agree that your contributions are licensed under the Apache License 2.0.
