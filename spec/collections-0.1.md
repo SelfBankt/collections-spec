@@ -95,12 +95,12 @@ More examples: a [high street](../examples/place-high-street.json) (`kind: place
 
 ## Open questions
 
-Each question has an issue for discussion.
+Each question has an issue for discussion; comment there.
 
-1. **Extend ARD, or stand alone?** Should Collections be fields on a nested catalogue entry, a new media type, or both? We lean towards extending ARD.
-2. **How should membership be verified?** A back-link in the member's own catalogue (as drafted), a signature from the member, or both?
-3. **Should a collection run its own search?** Collections could offer a search endpoint across members, or leave that to ARD registries and the agent.
-4. **Which facets should be standard?** Category, price, distance and availability are obvious. Do we need a shared vocabulary, or should facets point to schema.org properties?
+1. **Extend ARD, or stand alone?** ([#1](https://github.com/SelfBankt/collections-spec/issues/1)) Should Collections be fields on a nested catalogue entry, a new media type, or both? We lean towards extending ARD.
+2. **How should membership be verified?** ([#2](https://github.com/SelfBankt/collections-spec/issues/2)) A back-link in the member's own catalogue (as drafted), a signature from the member, or both?
+3. **Should a collection run its own search?** ([#3](https://github.com/SelfBankt/collections-spec/issues/3)) Collections could offer a search endpoint across members, or leave that to ARD registries and the agent.
+4. **Which facets should be standard?** ([#4](https://github.com/SelfBankt/collections-spec/issues/4)) Category, price, distance and availability are obvious. Do we need a shared vocabulary, or should facets point to schema.org properties?
 
 ## Path to a standard
 
