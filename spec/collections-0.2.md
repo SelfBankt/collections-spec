@@ -1,4 +1,4 @@
-# Collections: describing groups of businesses to AI agents
+# Business Collections: describing groups of businesses to AI agents
 
 | | |
 | --- | --- |
@@ -39,6 +39,7 @@ ARD v0.91 (26 August 2026) renamed the discovery file to `/.well-known/ard.json`
 | No answer for businesses without a website | Hosted members and `col:manifest` | Most small businesses are hosted by a platform |
 | `area.postcodeAreas` | `area.country`, `area.postalCodes` | Works outside the UK |
 | Examples under `/.well-known/collections/` | Any URL, listed in the publisher's `ard.json` | Paths under `/.well-known/` need IANA registration |
+| "Collections" | "Business Collections" in titles and prose. Technical names (`col:`, `collection`, `application/ai-collection+json`) are unchanged | In commerce, "collection" already means a group of products (Shopify) or of creative works (schema.org) |
 
 ## Terms
 
@@ -80,7 +81,7 @@ Each entry is an ARD entry: `identifier`, `displayName`, `type`, and exactly one
 
 The entry's `type` is usually the member's MCP server card (`application/mcp-server-card+json`). It MAY be an Agent Skill (`application/ai-skill+md`), an A2A agent card (`application/a2a-agent-card+json`), or another collection (`application/ai-collection+json`).
 
-Collections adds these terms in the `col` namespace:
+Business Collections adds these terms in the `col` namespace:
 
 | Term | Meaning | Example |
 | --- | --- | --- |
@@ -122,7 +123,7 @@ A host MUST add `col:memberOf` for a business only with that business's agreemen
 
 ## Searching a collection
 
-Collections defines no search API. A collection document is small enough for a client to filter itself on the `facets`. A publisher that wants server-side search MAY also run an [ARD registry](https://agenticresourcediscovery.org/spec) (`application/ai-registry+json`); because `col:` terms are namespaced, ARD accepts them as filter keys without a spec change, and ARD's optional Explore operation can return facet counts.
+Business Collections defines no search API. A collection document is small enough for a client to filter itself on the `facets`. A publisher that wants server-side search MAY also run an [ARD registry](https://agenticresourcediscovery.org/spec) (`application/ai-registry+json`); because `col:` terms are namespaced, ARD accepts them as filter keys without a spec change, and ARD's optional Explore operation can return facet counts.
 
 ## Client processing
 
@@ -202,9 +203,9 @@ More examples: a [high street](../examples/0.2/place-high-street.json) with a ho
 
 ## Relationship to ARD and the AI Catalog
 
-ARD v0.91 calls `/.well-known/ai-catalog.json` its predecessor, and MCP's server-card extension ([SEP-2127](https://modelcontextprotocol.io/seps/2127-mcp-server-cards)) still describes catalogues linking to server cards. Collections works with both: member entries use the entry shape they share, and a client MAY look for member manifests at the predecessor path when `/.well-known/ard.json` is missing.
+ARD v0.91 calls `/.well-known/ai-catalog.json` its predecessor, and MCP's server-card extension ([SEP-2127](https://modelcontextprotocol.io/seps/2127-mcp-server-cards)) still describes catalogues linking to server cards. Business Collections works with both: member entries use the entry shape they share, and a client MAY look for member manifests at the predecessor path when `/.well-known/ard.json` is missing.
 
-Collections adds only what a group needs: what kind of group it is, who curates it, when it runs, where it covers, each member's role, the terms agents can filter by, and proof that members agreed to be listed.
+Business Collections adds only what a group needs: what kind of group it is, who curates it, when it runs, where it covers, each member's role, the terms agents can filter by, and proof that members agreed to be listed.
 
 ## Open questions
 

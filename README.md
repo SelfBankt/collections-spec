@@ -1,4 +1,4 @@
-# Collections
+# Business Collections
 
 **An open draft for describing groups of businesses to AI agents: a trade show, a high street, a market or a trade body.**
 
@@ -8,7 +8,7 @@ Agent standards describe one publisher at a time. A collection lets one connecti
 
 ## Read the draft
 
-- [Specification: Collections 0.2](spec/collections-0.2.md) ([what changed from 0.1](spec/collections-0.2.md#what-changed-from-01-and-why))
+- [Specification: Business Collections 0.2](spec/collections-0.2.md) ([what changed from 0.1](spec/collections-0.2.md#what-changed-from-01-and-why))
 - JSON Schemas: [collection documents](schema/collections-0.2.schema.json) and [member manifests](schema/member-manifest-0.2.schema.json)
 - [Examples](examples/0.2/): an event, a high street with a hosted member, a trade association that nests the event, and the members' own manifests
 - [Interactive explorer and validator](https://gentifi.com/standards#explorer) on gentifi.com
@@ -75,7 +75,7 @@ The [open questions](spec/collections-0.2.md#open-questions) each have an issue,
 
 ## Relationship to other standards
 
-Collections builds on [ARD](https://agenticresourcediscovery.org/spec) (`/.well-known/ard.json`, previously `ai-catalog.json`). It reuses ARD's entries, identifiers, namespaced terms and registry search, and adds only what a group needs: kind, curator, time window, area, member roles, filter terms and confirmed membership. The aim is to propose it upstream as a neutral extension.
+Business Collections builds on [ARD](https://agenticresourcediscovery.org/spec) (`/.well-known/ard.json`, previously `ai-catalog.json`). It reuses ARD's entries, identifiers, namespaced terms and registry search, and adds only what a group needs: kind, curator, time window, area, member roles, filter terms and confirmed membership. The aim is to propose it upstream as a neutral extension.
 
 The [Gentifi Toolkit](https://github.com/SelfBankt/gentifi-toolkit) is the first implementation: it publishes back-links for businesses and checks collections.
 

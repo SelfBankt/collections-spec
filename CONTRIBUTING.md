@@ -1,6 +1,6 @@
 # Contributing
 
-Collections is an early draft, and feedback is the most useful contribution.
+Business Collections is an early draft, and feedback is the most useful contribution.
 
 - **Questions and objections:** comment on an existing issue or open a new one. Concrete use cases (your event, market or association) are especially helpful.
 - **Changes to the draft:** open a pull request that updates `spec/`, `schema/` and `examples/` together, so they stay in step.
