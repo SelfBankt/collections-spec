@@ -1,0 +1,83 @@
+{
+  "collection": {
+    "id": "urn:air:shows.example:collection:demo-selfbuild-2027",
+    "name": "Demo Self Build Show 2027",
+    "kind": "festival",
+    "description": "A fictional three-day show for people building their own homes.",
+    "url": "https://shows.example/selfbuild-2027",
+    "publisher": {
+      "name": "Demo Shows",
+      "domain": "shows.example"
+    },
+    "validFrom": "2027-05-14",
+    "validTo": "2027-05-16",
+    "facets": [
+      "col:category",
+      "col:priceFrom",
+      "col:stand",
+      "capabilities"
+    ],
+    "memberOf": [
+      {
+        "collection": "https://builders.example/collections/members.json"
+      }
+    ],
+    "updatedAt": "2026-10-11T09:00:00Z"
+  },
+  "entries": [
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:windows.example:mcp:catalogue",
+      "displayName": "Example Windows",
+      "type": "application/mcp-server-card+json",
+      "url": "https://windows.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Triple-glazed windows under £600/m²",
+        "Lead times for new windows"
+      ],
+      "capabilities": [
+        "search_catalogue",
+        "prepare_order"
+      ],
+      "col:stand": "B12",
+      "col:category": "glazing",
+      "col:priceFrom": {
+        "amount": 540,
+        "currency": "GBP",
+        "unit": "m²"
+      }
+    },
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:sash.example:mcp:catalogue",
+      "displayName": "Example Sash & Casement",
+      "type": "application/mcp-server-card+json",
+      "url": "https://sash.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Timber sash windows for a period house",
+        "Do you fit casement windows?"
+      ],
+      "capabilities": [
+        "search_catalogue",
+        "prepare_order"
+      ],
+      "col:stand": "B20",
+      "col:category": "glazing",
+      "col:priceFrom": {
+        "amount": 580,
+        "currency": "GBP",
+        "unit": "m²"
+      }
+    }
+  ]
+}

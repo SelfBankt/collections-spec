@@ -1,0 +1,14 @@
+{
+  "entries": [
+    {
+      "identifier": "urn:air:shows.example:collection:demo-selfbuild-2027",
+      "displayName": "Demo Self Build Show 2027",
+      "type": "application/ai-collection+json",
+      "url": "https://shows.example/collections/demo-selfbuild-2027.json",
+      "representativeQueries": [
+        "Which stands sell triple glazing under £600/m²?",
+        "Who does heat pumps at the show?"
+      ]
+    }
+  ]
+}

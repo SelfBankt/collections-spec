@@ -1,0 +1,45 @@
+{
+  "collection": {
+    "id": "urn:air:builders.example:collection:members",
+    "name": "Demo Builders Association",
+    "kind": "association",
+    "publisher": {
+      "name": "Demo Builders Association",
+      "domain": "builders.example"
+    },
+    "facets": [
+      "col:category"
+    ],
+    "updatedAt": "2026-10-11T09:00:00Z"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:shows.example:collection:demo-selfbuild-2027",
+      "displayName": "Demo Self Build Show 2027",
+      "type": "application/ai-collection+json",
+      "url": "https://shows.example/collections/demo-selfbuild-2027.json",
+      "representativeQueries": [
+        "Which exhibitors at the self build show do heat pumps?",
+        "Glazing stands at the show"
+      ]
+    },
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:windows.example:mcp:catalogue",
+      "displayName": "Example Windows",
+      "type": "application/mcp-server-card+json",
+      "url": "https://windows.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Triple-glazed windows under £600/m²",
+        "Lead times for new windows"
+      ],
+      "col:category": "glazing",
+      "col:tier": "full member"
+    }
+  ]
+}

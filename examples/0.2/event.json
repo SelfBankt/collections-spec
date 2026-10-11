@@ -1,0 +1,299 @@
+{
+  "collection": {
+    "id": "urn:air:shows.example:collection:demo-selfbuild-2027",
+    "name": "Demo Self Build Show 2027",
+    "kind": "event",
+    "description": "A fictional three-day show for people building their own homes.",
+    "url": "https://shows.example/selfbuild-2027",
+    "publisher": {
+      "name": "Demo Shows",
+      "domain": "shows.example"
+    },
+    "validFrom": "2027-05-14",
+    "validTo": "2027-05-16",
+    "facets": [
+      "col:category",
+      "col:priceFrom",
+      "col:stand",
+      "capabilities"
+    ],
+    "memberOf": [
+      {
+        "collection": "https://builders.example/collections/members.json"
+      }
+    ],
+    "updatedAt": "2026-10-11T09:00:00Z"
+  },
+  "entries": [
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:windows.example:mcp:catalogue",
+      "displayName": "Example Windows",
+      "type": "application/mcp-server-card+json",
+      "url": "https://windows.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Triple-glazed windows under £600/m²",
+        "Lead times for new windows"
+      ],
+      "capabilities": [
+        "search_catalogue",
+        "prepare_order"
+      ],
+      "col:stand": "B12",
+      "col:category": "glazing",
+      "col:priceFrom": {
+        "amount": 540,
+        "currency": "GBP",
+        "unit": "m²"
+      }
+    },
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:sash.example:mcp:catalogue",
+      "displayName": "Example Sash & Casement",
+      "type": "application/mcp-server-card+json",
+      "url": "https://sash.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Timber sash windows for a period house",
+        "Do you fit casement windows?"
+      ],
+      "capabilities": [
+        "search_catalogue",
+        "prepare_order"
+      ],
+      "col:stand": "B20",
+      "col:category": "glazing",
+      "col:priceFrom": {
+        "amount": 580,
+        "currency": "GBP",
+        "unit": "m²"
+      }
+    },
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:glazing.example:mcp:catalogue",
+      "displayName": "Example Glazing",
+      "type": "application/mcp-server-card+json",
+      "url": "https://glazing.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Bi-fold doors with triple glazing",
+        "Glazing quote for a new build"
+      ],
+      "capabilities": [
+        "search_catalogue",
+        "prepare_order"
+      ],
+      "col:stand": "B14",
+      "col:category": "glazing",
+      "col:priceFrom": {
+        "amount": 620,
+        "currency": "GBP",
+        "unit": "m²"
+      }
+    },
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:heatpumps.example:mcp:catalogue",
+      "displayName": "Example Heat Pumps",
+      "type": "application/mcp-server-card+json",
+      "url": "https://heatpumps.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Air source heat pump for a 4-bed house",
+        "Heat pump installation cost"
+      ],
+      "capabilities": [
+        "search_catalogue",
+        "prepare_order"
+      ],
+      "col:stand": "C04",
+      "col:category": "heating",
+      "col:priceFrom": {
+        "amount": 7800,
+        "currency": "GBP",
+        "unit": "installed"
+      }
+    },
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:underfloor.example:mcp:catalogue",
+      "displayName": "Example Underfloor",
+      "type": "application/mcp-server-card+json",
+      "url": "https://underfloor.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Underfloor heating for 120 m²",
+        "Wet or electric underfloor heating?"
+      ],
+      "capabilities": [
+        "search_catalogue",
+        "prepare_order"
+      ],
+      "col:stand": "C09",
+      "col:category": "heating",
+      "col:priceFrom": {
+        "amount": 45,
+        "currency": "GBP",
+        "unit": "m²"
+      }
+    },
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:timberframe.example:mcp:catalogue",
+      "displayName": "Example Timber Frame",
+      "type": "application/mcp-server-card+json",
+      "url": "https://timberframe.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Timber frame kit for a self build",
+        "Lead time for a timber frame"
+      ],
+      "capabilities": [
+        "search_catalogue",
+        "prepare_order"
+      ],
+      "col:stand": "A03",
+      "col:category": "structure",
+      "col:priceFrom": {
+        "amount": 310,
+        "currency": "GBP",
+        "unit": "m²"
+      }
+    },
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:insulation.example:mcp:catalogue",
+      "displayName": "Example Insulation",
+      "type": "application/mcp-server-card+json",
+      "url": "https://insulation.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Quote for 200 m² of loft insulation",
+        "Wood fibre insulation boards"
+      ],
+      "capabilities": [
+        "search_catalogue",
+        "prepare_order"
+      ],
+      "col:stand": "A07",
+      "col:category": "insulation",
+      "col:priceFrom": {
+        "amount": 18,
+        "currency": "GBP",
+        "unit": "m²"
+      }
+    },
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:solar.example:mcp:catalogue",
+      "displayName": "Example Solar",
+      "type": "application/mcp-server-card+json",
+      "url": "https://solar.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Solar panels with a battery",
+        "How many panels for a 4-bed house?"
+      ],
+      "capabilities": [
+        "search_catalogue",
+        "prepare_order"
+      ],
+      "col:stand": "D02",
+      "col:category": "energy",
+      "col:priceFrom": {
+        "amount": 5200,
+        "currency": "GBP",
+        "unit": "installed"
+      }
+    },
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:roofing.example:mcp:catalogue",
+      "displayName": "Example Roofing",
+      "type": "application/mcp-server-card+json",
+      "url": "https://roofing.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Slate roof price per m²",
+        "Roofers free in May"
+      ],
+      "capabilities": [
+        "search_catalogue",
+        "prepare_order"
+      ],
+      "col:stand": "B03",
+      "col:category": "roofing",
+      "col:priceFrom": {
+        "amount": 95,
+        "currency": "GBP",
+        "unit": "m²"
+      }
+    },
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:rainwater.example:mcp:catalogue",
+      "displayName": "Example Rainwater",
+      "type": "application/mcp-server-card+json",
+      "url": "https://rainwater.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Rainwater harvesting tank for a garden",
+        "Greywater system for a new build"
+      ],
+      "capabilities": [
+        "search_catalogue",
+        "prepare_order"
+      ],
+      "col:stand": "D05",
+      "col:category": "water",
+      "col:priceFrom": {
+        "amount": 2100,
+        "currency": "GBP",
+        "unit": "installed"
+      }
+    }
+  ]
+}

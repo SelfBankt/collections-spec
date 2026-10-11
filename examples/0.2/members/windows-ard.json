@@ -1,0 +1,31 @@
+{
+  "entries": [
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:windows.example:mcp:catalogue",
+      "displayName": "Example Windows",
+      "type": "application/mcp-server-card+json",
+      "url": "https://windows.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Triple-glazed windows under £600/m²",
+        "Lead times for new windows"
+      ],
+      "col:memberOf": [
+        {
+          "collection": "https://shows.example/collections/demo-selfbuild-2027.json",
+          "role": {
+            "stand": "B12"
+          }
+        },
+        {
+          "collection": "https://builders.example/collections/members.json"
+        }
+      ]
+    }
+  ]
+}
