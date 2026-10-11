@@ -1,0 +1,25 @@
+{
+  "entries": [
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:host.example:mcp:demo-greengrocer",
+      "displayName": "Example Greengrocer",
+      "type": "application/mcp-server-card+json",
+      "url": "https://host.example/b/demo-greengrocer/mcp/server-card.json",
+      "representativeQueries": [
+        "Have they got asparagus this week?",
+        "Reserve a veg box for Friday"
+      ],
+      "col:memberOf": [
+        {
+          "collection": "https://traders.example/collections/demo-high-street.json"
+        }
+      ]
+    }
+  ]
+}

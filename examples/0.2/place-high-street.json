@@ -1,0 +1,92 @@
+{
+  "collection": {
+    "id": "urn:air:traders.example:collection:demo-high-street",
+    "name": "Demo High Street",
+    "kind": "place",
+    "publisher": {
+      "name": "Demo Town Traders",
+      "domain": "traders.example"
+    },
+    "area": {
+      "country": "GB",
+      "postalCodes": [
+        "ZZ1",
+        "ZZ2"
+      ]
+    },
+    "facets": [
+      "col:category",
+      "capabilities"
+    ],
+    "updatedAt": "2026-10-11T09:00:00Z"
+  },
+  "entries": [
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:bakery.example:mcp:shop",
+      "displayName": "Example Bakery",
+      "type": "application/mcp-server-card+json",
+      "url": "https://bakery.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Is there sourdough left today?",
+        "Order a birthday cake for Saturday"
+      ],
+      "capabilities": [
+        "search_catalogue",
+        "check_availability",
+        "prepare_order"
+      ],
+      "col:category": "bakery"
+    },
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:hardware.example:mcp:shop",
+      "displayName": "Example Hardware",
+      "type": "application/mcp-server-card+json",
+      "url": "https://hardware.example/mcp/server-card.json",
+      "representativeQueries": [
+        "Do you cut keys?",
+        "Price of a 5 litre tin of white paint"
+      ],
+      "capabilities": [
+        "search_catalogue",
+        "check_availability"
+      ],
+      "col:category": "hardware"
+    },
+    {
+      "@context": [
+        "https://agenticresourcediscovery.org/context/v1",
+        {
+          "col": "https://gentifi.com/standards/collections/v0.2#"
+        }
+      ],
+      "identifier": "urn:air:host.example:mcp:demo-greengrocer",
+      "displayName": "Example Greengrocer",
+      "description": "Has no website of its own; its catalogue is hosted by host.example.",
+      "type": "application/mcp-server-card+json",
+      "url": "https://host.example/b/demo-greengrocer/mcp/server-card.json",
+      "representativeQueries": [
+        "Have they got asparagus this week?",
+        "Reserve a veg box for Friday"
+      ],
+      "capabilities": [
+        "search_catalogue",
+        "check_availability",
+        "prepare_order"
+      ],
+      "col:category": "greengrocer",
+      "col:manifest": "https://host.example/b/demo-greengrocer/ard.json"
+    }
+  ]
+}

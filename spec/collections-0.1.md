@@ -5,7 +5,7 @@
 | **Version** | 0.1 (draft) |
 | **Date** | 10 October 2026 |
 | **Author** | Gentifi |
-| **Status** | Proposal for discussion, not a standard. Field names are illustrative. |
+| **Status** | Superseded by [draft 0.2](collections-0.2.md), which builds on ARD v0.91. Kept for reference. |
 | **Licence** | Apache-2.0 |
 | **Schema** | [`schema/collections-0.1.schema.json`](../schema/collections-0.1.schema.json) |
 
@@ -48,7 +48,7 @@ The key words MUST, MUST NOT, SHOULD and MAY are used as described in [RFC 2119]
 
 ## Example
 
-A trade show publishes its collection from its own domain ([full file](../examples/event.json)):
+A trade show publishes its collection from its own domain ([full file](../examples/0.1/event.json)):
 
 ```json
 {
@@ -74,7 +74,7 @@ A trade show publishes its collection from its own domain ([full file](../exampl
 }
 ```
 
-Each member confirms its membership in its own `ai-catalog.json` (rule 1, [file](../examples/member-backlink.json)):
+Each member confirms its membership in its own `ai-catalog.json` (rule 1, [file](../examples/0.1/member-backlink.json)):
 
 ```json
 {
@@ -87,7 +87,7 @@ Each member confirms its membership in its own `ai-catalog.json` (rule 1, [file]
 }
 ```
 
-More examples: a [high street](../examples/place-high-street.json) (`kind: place`) and a [trade association that nests an event](../examples/nested-association.json) (rule 4). All businesses, domains and prices in the examples are fictional.
+More examples: a [high street](../examples/0.1/place-high-street.json) (`kind: place`) and a [trade association that nests an event](../examples/0.1/nested-association.json) (rule 4). All businesses, domains and prices in the examples are fictional.
 
 ## Relationship to ARD
 
